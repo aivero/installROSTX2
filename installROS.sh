@@ -32,3 +32,9 @@ rosdep update
 grep -q -F 'source /opt/ros/kinetic/setup.bash' ~/.bashrc || echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrcsource ~/.bashrc
 # Install rosinstall
 sudo apt-get install python-rosinstall -y
+
+#additional ros packages needed to build realsense ros wrapper
+sudo apt-get install ros-kinetic-cv-bridge -y
+sudo apt-get install ros-kinetic-image-transport -y
+sudo apt-get install ros-kinetic-tf -y
+
